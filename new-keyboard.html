@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicion -->
+    <link
+      rel="shortcut icon"
+      href="img/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/new-keyboard.css" />
+    <title>New KeyBoard</title>
+  </head>
+
+  <body>
+    <h1 class="heading">
+      <img src="img/keyboard.png" alt="" srcset="" />
+      KeyBoard
+    </h1>
+    <!-- <input type="color" name="" id="color"> -->
+    <div class="image">
+      <img src="img-alphabet/q.jpg" alt="" id="big-image" />
+    </div>
+    <div class="container-flex">
+      <div class="container">
+        <div class="row">
+          <div class="key" onclick="changealphabet('`.jpg')">`</div>
+          <div class="key" onclick="sounds('one','1.jpg')">1</div>
+          <div class="key" onclick="sounds('two','2.jpg')">2</div>
+          <div class="key" onclick="sounds('three','3.jpg')">3</div>
+          <div class="key" onclick="sounds('four','4.jpg')">4</div>
+          <div class="key" onclick="sounds('five','5.jpg')">5</div>
+          <div class="key" onclick="sounds('six','6.jpg')">6</div>
+          <div class="key" onclick="sounds('seven','7.jpg')">7</div>
+          <div class="key" onclick="sounds('eight','8.jpg')">8</div>
+          <div class="key" onclick="sounds('nine','9.jpg')">9</div>
+          <div class="key" onclick="sounds('zero','0.jpg')">0</div>
+          <div class="key" onclick="changealphabet('-.jpg')">-</div>
+          <div class="key" onclick="changealphabet('=.jpg')">=</div>
+          <div
+            class="key backspace-key"
+            onclick="changealphabet('backspace.jpg')"
+          >
+            Backspace
+          </div>
+        </div>
+        <div class="row">
+          <div class="key tab-key" onclick="changealphabet('tab.jpg')">Tab</div>
+          <div class="key" onclick="sounds('q','q.jpg')">Q</div>
+          <div class="key" onclick="sounds('w','w.jpg')">W</div>
+          <div class="key" onclick="sounds('e','e.jpg')">E</div>
+          <div class="key" onclick="sounds('r','r.jpg')">R</div>
+          <div class="key" onclick="sounds('t','t.jpg')">T</div>
+          <div class="key" onclick="sounds('y','y.jpg')">Y</div>
+          <div class="key" onclick="sounds('u','u.jpg')">U</div>
+          <div class="key" onclick="sounds('i','i.jpg')">I</div>
+          <div class="key" onclick="sounds('o','o.jpg')">O</div>
+          <div class="key" onclick="sounds('p','p.jpg')">P</div>
+          <div class="key" onclick="sounds('','.jpg')">[</div>
+          <div class="key">]</div>
+          <div class="key">\</div>
+        </div>
+        <div class="row">
+          <div class="key capslock-key" onclick="changealphabet('capslock.jpg')">
+            Capslock
+          </div>
+          <div class="key" onclick="sounds('a','a.jpg')">A</div>
+          <div class="key" onclick="sounds('s','s.jpg')">S</div>
+          <div class="key" onclick="sounds('d','d.jpg')">D</div>
+          <div class="key" onclick="sounds('f','f.jpg')">F</div>
+          <div class="key" onclick="sounds('g','g.jpg')">G</div>
+          <div class="key" onclick="sounds('h','h.jpg')">H</div>
+          <div class="key" onclick="sounds('j','j.jpg')">J</div>
+          <div class="key" onclick="sounds('k','k.jpg')">K</div>
+          <div class="key" onclick="sounds('l','l.jpg')">L</div>
+          <div class="key" onclick="changealphabet(';.jpg')">;</div>
+          <div class="key" onclick="changealphabet('tick.jpg')">'</div>
+          <div class="key enter-key" onclick="changealphabet('enter.jpg')">
+            Enter
+          </div>
+        </div>
+        <div class="row">
+          <div class="key left-shift-key" onclick="changealphabet('shift.jpg')">
+            Shift
+          </div>
+          <div class="key" onclick="sounds('z','z.jpg')">Z</div>
+          <div class="key" onclick="sounds('x','x.jpg')">X</div>
+          <div class="key" onclick="sounds('c','c.jpg')">C</div>
+          <div class="key" onclick="sounds('v','v.jpg')">V</div>
+          <div class="key" onclick="sounds('b','b.jpg')">B</div>
+          <div class="key" onclick="sounds('n','n.jpg')">N</div>
+          <div class="key" onclick="sounds('m','m.jpg')">M</div>
+          <div class="key" onclick="changealphabet(',.jpg')">,</div>
+          <div class="key" onclick="changealphabet('dot.jpg')">.</div>
+          <div class="key" onclick="changealphabet('forw.jpg')">/</div>
+          <div
+            class="key right-shift-key"
+            onclick="changealphabet('shift.jpg')"
+          >
+            Shift
+          </div>
+        </div>
+        <div class="row">
+          <div class="key left-ctrl-key" onclick="changealphabet('ctrl.jpg')">
+            Ctrl
+          </div>
+          <div class="key" onclick="changealphabet('fn.jpg')">Fn</div>
+          <div class="key" onclick="changealphabet('window.jpg')">
+            <i class="fa-brands fa-windows"></i>
+          </div>
+          <div class="key left-alt-key" onclick="changealphabet('alt.jpg')">
+            Alt
+          </div>
+          <div class="key space-key" onclick="changealphabet('space.jpg')">
+            Space
+          </div>
+          <div class="key right-alt-key" onclick="changealphabet('alt.jpg')">
+            Alt
+          </div>
+          <div class="key right-ctrl-key" onclick="changealphabet('ctrl.jpg')">
+            Ctrl
+          </div>
+          <div class="key" onclick="changealphabet('left.jpg')">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="key">
+            <div class="arrow">
+              <div class="arrow-up" onclick="changealphabet('up.jpg')">
+                <i class="fa-solid fa-arrow-up"></i>
+              </div>
+              <div class="arrow-down" onclick="changealphabet('down.jpg')">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="key" onclick="changealphabet('right.jpg')">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="numerical-position">
+            <div class="numerical-keys">
+                <div class="row">
+                    <div class="key">Num Lock</div>
+                    <div class="key">/</div>
+                    <div class="key">*</div>
+                </div>
+                <div class="row">
+                    <div class="key">7</div>
+                    <div class="key">8</div>
+                    <div class="key">9</div>
+                </div>
+                <div class="row">
+                    <div class="key">4</div>
+                    <div class="key">5</div>
+                    <div class="key">6</div>
+                </div>
+                <div class="row">
+                    <div class="key">1</div>
+                    <div class="key">2</div>
+                    <div class="key">3</div>
+                </div>
+            </div>
+            <div class="numerical-side-keys">
+                <div class="row">
+                    <div class="key">-</div>
+                    <div class="add">+</div>
+                    <div class="numerical-side-enter">Enter</div>
+                </div>
+            </div>
+        </div> -->
+
+      <audio id="audio" controls autoplay>
+        <source id="audiosrc" src="sounds/abc.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <!-- Images -->
+    <!-- <div class="small-img">
+        <img src="img-alphabet/q.jpg" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+        <img src="" alt="" srcset="" class="small-image">
+    </div> -->
+
+    <!-- !Icons v.6 -->
+    <script
+      src="https://kit.fontawesome.com/0b5094f92b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- !js -->
+    <script src="js/new-keyboard.js"></script>
+  </body>
+</html>
